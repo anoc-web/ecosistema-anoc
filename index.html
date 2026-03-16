@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wTOKENx Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>wTOKENx <span class="gradient">Ecosystem</span></h1>
+            <p>10 tokens envueltos con fee 3% en Polygon</p>
+        </header>
+
+        <!-- Tabla de tokens (estilo DEX Screener) -->
+        <div class="table-container">
+            <table class="token-table" id="tokenTable">
+                <thead>
+                    <tr>
+                        <th>Token</th>
+                        <th>Precio USD</th>
+                        <th>24h %</th>
+                        <th>Volumen 24h</th>
+                        <th>Liquidez</th>
+                        <th>Pool</th>
+                    </tr>
+                </thead>
+                <tbody id="tokenTableBody">
+                    <tr>
+                        <td colspan="6" class="loading">Cargando datos...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Datos en tiempo real vía <a href="https://dexscreener.com" target="_blank">DEX Screener API</a></p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
